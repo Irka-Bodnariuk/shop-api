@@ -56,7 +56,7 @@ REST API для управління товарами та категоріям�
 ### 1. Клонування проєкту
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/Irka-Bodnariuk/shop-api.git
 cd shop-api
 ```
 
