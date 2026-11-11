@@ -72,13 +72,21 @@ python -m venv .venv
 .venv\Scripts\Activate.ps1
 ```
 
-### 3. Встановлення залежностей
+### 3. Налаштування змінних середовища
+
+Створіть файл `.env` на основі шаблону:
+
+```bash
+copy .env.example .env
+```
+
+### 4. Встановлення залежностей
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 4. Запуск Docker-сервісів
+### 5. Запуск Docker-сервісів
 
 ```bash
 docker compose up -d
@@ -90,7 +98,7 @@ docker compose up -d
 docker compose ps
 ```
 
-### 5. Запуск FastAPI
+### 6. Запуск FastAPI
 
 ```bash
 uvicorn app.main:app --reload
@@ -112,7 +120,7 @@ uvicorn app.main:app --reload
 - Port: `3306`
 - Database: `shop_db`
 - User: `shop_user`
-- Password: значення `MYSQL_PASSWORD` у `docker-compose.yml`
+- Password: значення `MYSQL_PASSWORD` у файлі `.env`
 
 Для phpMyAdmin як сервер бази даних використовується `db`.
 

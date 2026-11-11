@@ -39,14 +39,12 @@ def root():
         "message": "Shop API is running!"
     }
 
-
 @app.get("/health")
 def health():
     return {
         "status": "ok",
         "message": "Server is healthy"
     }
-
 
 @app.get("/db-check")
 def db_check():
